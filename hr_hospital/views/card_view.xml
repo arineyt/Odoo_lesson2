@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+       <record id="action_hospital_card" model="ir.actions.act_window">
+           <field name="name">Doctors</field>
+           <field name="type">ir.actions.act_window</field>
+           <field name="res_model">hospital.card</field>
+           <field name="view_mode">tree,form</field>
+           <field name="context">{}</field>
+           <field name="help" type="html">
+               <p class="o_view_nocontent_smiling_face">
+                   Create your first card!
+               </p>
+           </field>
+       </record>
+
+     <menuitem id="menu_card"
+              name="Card"
+              action="action_hospital_card"
+              parent="menu_card_master"
+              sequence="0"/>
+
+</odoo>
